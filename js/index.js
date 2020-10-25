@@ -17,7 +17,7 @@ email.addEventListener("blur", emailVerify, true);
 password.addEventListener("blur", passwordVerify, true);
 function validateForm(evt) {
   if (fname.value === "") {
-    fname_error.textContent = "First Name cannot be empty";
+    fname_error.textContent = "First name cannot be empty";
     fname.style.border = "1px solid red";
     (fname.style.backgroundImage = "url('/img/icon-error.svg')"),
       (fname.style.backgroundRepeat = "no-repeat"),
@@ -25,7 +25,7 @@ function validateForm(evt) {
     return false;
   }
   if (lname.value === "") {
-    lname_error.textContent = "Last Name cannot be empty";
+    lname_error.textContent = "Last name cannot be empty";
     lname.style.border = "1px solid red";
     (lname.style.backgroundImage = "url('/img/icon-error.svg')"),
       (lname.style.backgroundRepeat = "no-repeat"),
@@ -81,3 +81,4 @@ function passwordVerify() {
     return true;
   }
 }
+validateForm()
