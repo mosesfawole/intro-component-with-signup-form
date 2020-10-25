@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="styles/style.css" />
+  <body>
+    <div class="wrapper">
+      <div class="contents">
+        <div class="info">
+          <div class="header"><h1>Learn to code by watching others</h1></div>
+          <div class="header-info">
+            <h3>
+              See how experienced developers solve problems in real-time.
+              Watching scripted tutorials is great, but understanding how
+              developers think is invaluable.
+            </h3>
+          </div>
+        </div>
+        <div class="container">
+          <div class="trial">
+            <b>Try it free 7 days</b> <br />
+            <span>then $20/mo. thereafter</span>
+          </div>
+          <form id="vform" onsubmit="return validateForm()">
+            <input name="fname" id="fname" type="text" placeholder="First Name" />
+            <p id="fname_error"></p>
+
+            <input name="lname"id="lname" type="text" placeholder="Last Name" />
+            <p id="lname_error"></p>
+
+            <input name="email"id="email"  type="email" placeholder="Email Address " />
+            <p id="email_error"></p>
+
+            <input name="password" id="password" type="password" placeholder="Password"  />
+            <p id="password_error"></p>
+
+            <button type="submit" id="submit">
+              <a >claim your free trial</a>
+            </button>
+            <span style="color: gray">
+              By clicking the button,you are agreeing to <br />
+              our <span style="color: red">Terms and Services</span>
+            </span>
+          </form>
+          <!-- <img src="/img/icon-error.svg" alt=""> -->
+        </div>
+      </div>
+      <footer>
+        <footer>
+          <p class="attributes">
+            Challenge by
+             <a href="https://www.frontendmentor.io?ref=challenge">
+              Frontend Mentor
+            </a> 
+            Coded by <a href="https://github/mosesfawole"> Moses Fawole</a>.
+          </p>
+        </footer>
+      </footer>
+    </div>
+  </body>
+  <script src="/js/index.js"></script>
+</html>
