@@ -3,7 +3,6 @@
   margin: 0px;
   box-sizing: border-box;
 }
-
 body {
   background-image: url(/img/bg-intro-mobile.png);
   background-color: hsl(0, 100%, 74%);
@@ -22,7 +21,7 @@ body {
   font-weight: 500;
   margin-bottom: 20px;
 }
-.info .header-info h3 {
+.info .header-info h4 {
   font-weight: normal;
   color: whitesmoke;
 }
@@ -41,8 +40,6 @@ form {
   background-color: white;
   margin-top: 20px;
   border-radius: 5px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   box-shadow: 0px 6px 0px 0px palevioletred;
 }
 
@@ -56,11 +53,8 @@ input {
   font-weight: 500;
   outline: none;
 }
-input .error {
-  background-image: url(/img/icon-error.svg);
-  background-repeat: no-repeat;
-  background-position: right;
-  color: red;
+#vform #error {
+  display: none;
 }
 input:hover {
   border: 1px solid lightblue;
@@ -93,9 +87,12 @@ p {
   color: red;
   font-size: 14px;
   text-align: right;
+  display: none;
+  font-size: smaller;
+  margin-bottom: 5px;
 }
 
-footer p {
+footer small {
   color: white;
   text-align: center;
   margin-top: 10px;
@@ -120,7 +117,7 @@ footer a {
     font-weight: 700;
     width: 60%;
   }
-  .info .header-info h3 {
+  .info .header-info h4 {
     width: 100%;
   }
   .contents {
@@ -134,7 +131,7 @@ footer a {
     /* margin: auto; */
     margin-top: 20px;
   }
-  footer p{
+  footer p {
     text-align: center;
     margin: auto;
   }
