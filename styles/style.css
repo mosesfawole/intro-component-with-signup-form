@@ -92,8 +92,9 @@ p {
   margin-bottom: 5px;
 }
 
-footer small {
+footer p {
   color: white;
+  display: block;
   text-align: center;
   margin-top: 10px;
 }
@@ -102,7 +103,7 @@ footer a {
   color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 60em) {
   body {
     background-image: url(/img/bg-intro-desktop.png);
   }
@@ -132,6 +133,9 @@ footer a {
     margin-top: 20px;
   }
   footer p {
+    margin-left: 35%;
+  }
+  footer .a {
     text-align: center;
     margin: auto;
   }
